@@ -1,6 +1,10 @@
-import 1396545613595803848
+import discord
 from discord.ext import commands
 from datetime import datetime
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import json
+import os
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix='!', intents=intents)
